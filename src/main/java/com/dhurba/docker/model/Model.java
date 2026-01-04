@@ -3,7 +3,7 @@ package com.dhurba.docker.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "t_model")
+@Table(name = "model")
 public class Model {
 
     private String id;
