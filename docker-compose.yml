@@ -1,0 +1,23 @@
+services:
+  # Your existing Java App
+  app:
+    image: dhrubamuk/docker-test:latest
+    build: .
+    environment:
+      - DATA_SOURCE_URL=jdbc:mysql://localhost:3309/inventory?useSSL=true&serverTimezone=UTC&useLegacyDatetimeCode=false
+      - DATABASE_USERNAME=root
+      - DATABASE_PASSWORD=root
+    ports:
+      - "8081:8080"
+
+  # The Automation Hero
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      # If your Docker Hub repo is private, you need these:
+      - REPO_USER=${DOCKERHUB_USERNAME}
+      - REPO_PASS=${DOCKERHUB_TOKEN}
+    command: --interval 30 --cleanup # Check for updates every 30 seconds
