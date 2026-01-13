@@ -28,7 +28,7 @@ public class DummyServiceTest {
         when(modelRepo.findAll()).thenReturn(Collections.singletonList(createModel()));
         List<ModelDto> modelDtos = dummyService.fetchAll();
         verify(modelRepo).findAll();
-        assert modelDtos.size() == 1;
+        assert modelDtos.size() == 9;
     }
 
     private Model createModel() {
