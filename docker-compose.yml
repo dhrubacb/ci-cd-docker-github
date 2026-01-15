@@ -17,7 +17,6 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      # If your Docker Hub repo is private, you need these:
       - REPO_USER=${DOCKERHUB_USERNAME}
       - REPO_PASS=${DOCKERHUB_TOKEN}
     command: --interval 30 --cleanup # Check for updates every 30 seconds

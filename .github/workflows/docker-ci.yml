@@ -21,11 +21,9 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-          cache: maven # Speeds up builds by remembering downloaded jars
+          cache: maven
 
       # 3. Run Tests & Coverage Gate
-      # This step will FAIL the whole pipeline if tests fail or
-      # if you added the JaCoCo 'check' threshold in your pom.xml
       - name: Run Unit Tests
         run: mvn clean test
 

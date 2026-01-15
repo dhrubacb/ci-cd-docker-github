@@ -29,5 +29,4 @@ USER appuser
 COPY --from=build /app/ci-cd-docker-github/target/*.jar app.jar
 
 # Standard Java 25 execution
-# Optional: Added flags for better container memory management
 ENTRYPOINT ["java", "-XX:+UseContainerSupport", "-Xmx512m", "-jar", "app.jar"]
