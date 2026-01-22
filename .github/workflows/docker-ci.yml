@@ -26,6 +26,10 @@ jobs:
       # 3. Run Tests & Coverage Gate
       - name: Run Unit Tests
         run: mvn clean test jacoco:report
+      - name: Fix Permissions and Wait
+        run: |
+            sudo chmod -R 777 target/site/jacoco
+            sleep 2
 
       # 4. Generate Coverage Summary for GitHub UI
       - name: Add Coverage Summary to Action
