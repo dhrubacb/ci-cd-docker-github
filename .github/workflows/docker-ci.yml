@@ -40,11 +40,17 @@ jobs:
           title: "Unit Test Coverage Report"
           update-comment: true
 
-      - name: Generate Coverage Badge
-        uses: cicirello/jacoco-badge-generator@v2
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
         with:
-          generate-branches-badge: true
-          jacoco-csv-file: ${{ github.workspace }}/target/site/jacoco/jacoco.csv
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./target/site/jacoco/jacoco.xml
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./target/site/jacoco/jacoco.xml
 
       # 5. Prepare Docker
       - name: Login to Docker Hub
