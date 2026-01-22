@@ -13,7 +13,7 @@ Orchestration: Docker Compose
 
 CI/CD: GitHub Actions + Docker Hub
 
-![Build Status](https://github.com/dhrubcb/ci-cd-docker-github/actions/workflows/docker-ci.yml/badge.svg)
+![Build Status](https://github.com/dhrubacb/ci-cd-docker-github/actions/workflows/docker-ci.yml/badge.svg)
 
 🛠 Features
 1. Multi-Stage Dockerfile
