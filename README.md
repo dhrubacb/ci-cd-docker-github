@@ -1,5 +1,10 @@
 # ci-cd-docker-github
 Java CI/CD with Docker & GitHub Actions
+
+![Build Status](https://github.com/dhrubacb/ci-cd-docker-github/actions/workflows/docker-ci.yml/badge.svg)
+
+![Coverage](.github/badges/jacoco.svg)
+
 This repository demonstrates a professional A-Z Dockerized workflow for a Java 25 application. It covers everything from multi-stage builds and internal networking to automated deployment pipelines.
 
 🏗 Architecture Overview
@@ -13,7 +18,6 @@ Orchestration: Docker Compose
 
 CI/CD: GitHub Actions + Docker Hub
 
-![Build Status](https://github.com/dhrubacb/ci-cd-docker-github/actions/workflows/docker-ci.yml/badge.svg)
 
 🛠 Features
 1. Multi-Stage Dockerfile
