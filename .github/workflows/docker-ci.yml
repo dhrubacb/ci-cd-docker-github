@@ -31,7 +31,7 @@ jobs:
       - name: Add Coverage Summary to Action
         uses: irongut/CodeCoverageSummary@v1.3.0
         with:
-          filename: /home/runner/work/ci-cd-docker-github/ci-cd-docker-github/target/site/jacoco/jacoco.xml
+          filename: target/site/jacoco/jacoco.xml
           badge: true
           format: markdown
           output: both
