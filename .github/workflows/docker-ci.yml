@@ -31,7 +31,6 @@ jobs:
       - name: Run Unit Tests
         run: mvn clean test jacoco:report
 
-      # 4. The "Bulletproof" Coverage Step
       - name: Generate Coverage Report
         uses: madrapps/jacoco-report@v1.7.1
         with:

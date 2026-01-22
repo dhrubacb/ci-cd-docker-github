@@ -13,6 +13,8 @@ Orchestration: Docker Compose
 
 CI/CD: GitHub Actions + Docker Hub
 
+![Build Status](https://github.com/dhrubcb/ci-cd-docker-github/actions/workflows/docker-ci.yml/badge.svg)
+
 🛠 Features
 1. Multi-Stage Dockerfile
 The project uses a specialized Dockerfile to separate the Build Environment from the Runtime Environment.
