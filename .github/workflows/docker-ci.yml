@@ -44,7 +44,7 @@ jobs:
         uses: cicirello/jacoco-badge-generator@v2
         with:
           generate-branches-badge: true
-          jacoco-csv-file: target/site/jacoco/jacoco.csv
+          jacoco-csv-file: ${{ github.workspace }}/target/site/jacoco/jacoco.csv
 
       # 5. Prepare Docker
       - name: Login to Docker Hub
