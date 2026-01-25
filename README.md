@@ -1,9 +1,7 @@
 # ci-cd-docker-github
 Java CI/CD with Docker & GitHub Actions
-
-![Build Status](https://github.com/dhrubacb/ci-cd-docker-github/actions/workflows/docker-ci.yml/badge.svg)
-
-[![codecov](https://codecov.io/github/dhrubacb/ci-cd-docker-github/branch/main/graph/badge.svg?token=Y7EB29806Z)](https://codecov.io/github/dhrubacb/ci-cd-docker-github)
+Last Build Status: ![Build Status](https://github.com/dhrubacb/ci-cd-docker-github/actions/workflows/docker-ci.yml/badge.svg)
+Coverage: [![codecov](https://codecov.io/github/dhrubacb/ci-cd-docker-github/branch/main/graph/badge.svg?token=Y7EB29806Z)](https://codecov.io/github/dhrubacb/ci-cd-docker-github)
 
 This repository demonstrates a professional A-Z Dockerized workflow for a Java 25 application. It covers everything from multi-stage builds and internal networking to automated deployment pipelines.
 
